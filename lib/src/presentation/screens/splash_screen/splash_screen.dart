@@ -8,6 +8,11 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(AppStartupController());
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Center(child: Image.asset(scale: 3, "assets/icons/logo.png")),
+      ),
+    );
   }
 }
