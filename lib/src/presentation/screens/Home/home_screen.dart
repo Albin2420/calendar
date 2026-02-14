@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
-        title: const Text("My Calendar", style: TextStyle(color: Colors.white)),
+        title: const Text("Calendar", style: TextStyle(color: Colors.white)),
         centerTitle: false,
         elevation: 0,
         backgroundColor: Color(0xFF010048),
