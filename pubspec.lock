@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  device_calendar:
+    dependency: "direct main"
+    description:
+      name: device_calendar
+      sha256: "683fb93ec302b6a65c0ce57df40ff9dcc2404f59c67a2f8b93e59318c8a0a225"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.3.3"
   fake_async:
     dependency: transitive
     description:
@@ -78,6 +86,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.0"
+  flutter_localizations:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_spinkit:
     dependency: transitive
     description:
@@ -91,6 +104,19 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  fluttertoast:
+    dependency: "direct main"
+    description:
+      name: fluttertoast
+      sha256: "144ddd74d49c865eba47abe31cbc746c7b311c82d6c32e571fd73c4264b740e2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "9.0.0"
   get:
     dependency: "direct main"
     description:
@@ -99,6 +125,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.7.3"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      sha256: "87721a4a50b19c7f1d49001e51409bddc46303966ce89a65af4f4e6004896412"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.6.0"
+  http_parser:
+    dependency: transitive
+    description:
+      name: http_parser
+      sha256: "178d74305e7866013777bab2c3d8726205dc5a4dd935297175b19a23a2e66571"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.2"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: "3df61194eb431efc39c4ceba583b95633a403f46c9fd341e550ce0bfa50e9aa5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.20.2"
   leak_tracker:
     dependency: transitive
     description:
@@ -176,6 +226,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.2"
+  sprintf:
+    dependency: transitive
+    description:
+      name: sprintf
+      sha256: "1fc9ffe69d4df602376b52949af107d8f5703b77cda567c4d7d86a0693120f23"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.0"
   stack_trace:
     dependency: transitive
     description:
@@ -200,6 +258,38 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.1"
+  syncfusion_flutter_calendar:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_calendar
+      sha256: "4a842984b7240e67db927a674557be9705812aa420fd995ad356846ff8d86f89"
+      url: "https://pub.dev"
+    source: hosted
+    version: "32.2.4"
+  syncfusion_flutter_core:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_core
+      sha256: "28cccd7e6235ab6efad75bad72bbfad6fc52f371f923f53f7f6f77e79a857da0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "32.2.4"
+  syncfusion_flutter_datepicker:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_datepicker
+      sha256: "909afd171f7422ce2810b96e5098710db87bc5527bf7387266a916bda62bc3cb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "32.2.4"
+  syncfusion_localizations:
+    dependency: transitive
+    description:
+      name: syncfusion_localizations
+      sha256: bd1df054df7d4854d1c6e1a7c9aed9fa227d20f6d1345cf00049087cf6738510
+      url: "https://pub.dev"
+    source: hosted
+    version: "32.2.4"
   term_glyph:
     dependency: transitive
     description:
@@ -216,6 +306,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.8"
+  timezone:
+    dependency: "direct main"
+    description:
+      name: timezone
+      sha256: "784a5e34d2eb62e1326f24d6f600aaaee452eb8ca8ef2f384a59244e292d158b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.11.0"
+  typed_data:
+    dependency: transitive
+    description:
+      name: typed_data
+      sha256: f9049c039ebfeb4cf7a7104a675823cd72dba8297f264b6637062516699fa006
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.4.0"
   vector_math:
     dependency: transitive
     description:
@@ -242,4 +348,4 @@ packages:
     version: "1.1.1"
 sdks:
   dart: ">=3.11.0 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.35.1"

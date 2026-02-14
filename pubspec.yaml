@@ -36,6 +36,14 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.7.3
   flutter_easyloading: ^3.0.5
+  device_calendar: ^4.3.3
+  syncfusion_flutter_calendar: ^32.2.4
+  syncfusion_flutter_core: ^32.2.4
+  timezone: ^0.11.0
+  fluttertoast: ^9.0.0
+
+  
+  
 
 dev_dependencies:
   flutter_test:
@@ -89,3 +97,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+dependency_overrides:
+  timezone: ^0.11.0
+
