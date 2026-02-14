@@ -8,6 +8,10 @@ class Calendar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(builder: EasyLoading.init(), home: SplashScreen());
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      builder: EasyLoading.init(),
+      home: SplashScreen(),
+    );
   }
 }
