@@ -37,6 +37,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               child: SfCalendar(
+                initialSelectedDate: DateTime.now(),
                 backgroundColor: Colors.white,
                 view: CalendarView.month,
                 dataSource: EventDataSource(controller.events),
@@ -51,16 +52,12 @@ class HomeScreen extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-
                 monthViewSettings: const MonthViewSettings(showAgenda: true),
-
                 todayHighlightColor: const Color(0xFF010048),
-
                 selectionDecoration: BoxDecoration(
                   border: Border.all(color: const Color(0xFF010048), width: 2),
                   borderRadius: BorderRadius.circular(8),
                 ),
-
                 onTap: (calendarTapDetails) {
                   log("Tapped Date: ${calendarTapDetails.date}");
                 },
