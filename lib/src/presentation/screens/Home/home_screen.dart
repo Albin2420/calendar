@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'package:calendar/src/data/models/event_data_source.dart';
 import 'package:calendar/src/presentation/controller/home_controller/home_controller.dart';
 import 'package:flutter/material.dart';
