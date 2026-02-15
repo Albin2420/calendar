@@ -41,7 +41,6 @@ class HomeScreen extends StatelessWidget {
                 backgroundColor: Colors.white,
                 view: CalendarView.month,
                 dataSource: EventDataSource(controller.events),
-
                 headerHeight: 60,
                 headerStyle: const CalendarHeaderStyle(
                   backgroundColor: Colors.white,
@@ -58,9 +57,6 @@ class HomeScreen extends StatelessWidget {
                   border: Border.all(color: const Color(0xFF010048), width: 2),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                onTap: (calendarTapDetails) {
-                  log("Tapped Date: ${calendarTapDetails.date}");
-                },
               ),
             ),
           );
