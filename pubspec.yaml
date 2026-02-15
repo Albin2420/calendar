@@ -41,6 +41,7 @@ dependencies:
   syncfusion_flutter_core: ^32.2.4
   timezone: ^0.11.0
   fluttertoast: ^9.0.0
+  google_fonts: ^8.0.1
 
   
   

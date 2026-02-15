@@ -4,8 +4,10 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   final deviceCalendarPlugin = DeviceCalendarPlugin();
+
   RxList<Event> events = <Event>[].obs;
   Rx<DateTime> currentDate = DateTime.now().obs;
+  RxBool isLoading = false.obs;
 
   @override
   void onInit() {
@@ -15,13 +17,15 @@ class HomeController extends GetxController {
 
   Future<void> fetchEvents() async {
     try {
-      Fluttertoast.showToast(msg: "Please wait while fetch events");
+      isLoading.value = true;
+
       var permission = await deviceCalendarPlugin.hasPermissions();
 
       if (!(permission.data ?? false)) {
         final request = await deviceCalendarPlugin.requestPermissions();
         if (!(request.data ?? false)) {
           Fluttertoast.showToast(msg: "Calendar permission is required");
+          isLoading.value = false;
           return;
         }
       }
@@ -45,12 +49,10 @@ class HomeController extends GetxController {
       }
 
       events.assignAll(allEvents);
-
-      if (events.isEmpty) {
-        Fluttertoast.showToast(msg: "No calendar events found");
-      }
     } catch (e) {
       Fluttertoast.showToast(msg: "Could not fetch calendar events");
+    } finally {
+      isLoading.value = false;
     }
   }
 }
