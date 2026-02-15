@@ -3,6 +3,7 @@ import 'package:calendar/src/presentation/controller/home_controller/home_contro
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -21,6 +22,26 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Obx(() {
+          if (controller.isLoading.value) {
+            return Center(
+              child: Column(
+                spacing: 24,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const CircularProgressIndicator(color: Color(0xFF010048)),
+                  Text(
+                    "Syncing your calendar events...",
+                    style: GoogleFonts.poppins(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey.shade800,
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }
+
           return Padding(
             padding: const EdgeInsets.all(12),
             child: Container(
